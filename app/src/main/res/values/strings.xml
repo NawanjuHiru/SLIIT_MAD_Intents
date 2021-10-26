@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tutorial 03</string>
+    <string name="tv_no1">Number 1</string>
+    <string name="tv_no2">Number 2</string>
+    <string name="edt_no1" />
+    <string name="edt_no2" />
+    <string name="btn_ok">OK</string>
+    <string name="tv_ans" />
+    <string name="btn_add">+</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_multiply">*</string>
+    <string name="btn_division">/</string>
+    <string name="tv_toast">Opening Calculator</string>
+</resources>

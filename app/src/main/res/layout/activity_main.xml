@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_no1"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/tv_no1"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_no2"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/tv_no2"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_no1" />
+
+    <EditText
+        android:id="@+id/edt_no1"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/edt_no1"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_no1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_no1" />
+
+    <EditText
+        android:id="@+id/edt_no2"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/edt_no2"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_no2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_no2" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="116dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#C1C0C0"
+        android:hint="@string/btn_ok"
+        android:onClick="openSecond"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_no2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
